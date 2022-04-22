@@ -36,8 +36,8 @@ describe('lendflow registration', () => {
     // For now, let's assume that you've satisfied captcha
     // This test will fail now because I am not satisfying captcha
 
-    cy.get('button[type=submit').should('be.enabled')
-    cy.click('button[type=submit')
+    cy.get('button[type=submit]').should('be.enabled')
+    cy.get('button[type=submit]').click();
 
     // verify that the registration was successful
     cy.contains('Thank you for registering with Lendflow').should('exist')
